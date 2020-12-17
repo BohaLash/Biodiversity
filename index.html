@@ -6,32 +6,36 @@
     <title>
         Biodiversity
     </title>
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
     <link rel="stylesheet" href="css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body class="th1">
-    <header>
-        <nav>
-        </nav>
-    </header>
-
     <section>
-
-
+        <div class="card" onclick="window.location='./bacteria.html'">
+            <img src="img/bacteria.svg" alt="Бактерії">
+            <h1>Бактерії</h1>
+        </div>
+        <div class="card" onclick="window.location='./eukaryote.html'">
+            <img src="img/eukaryote.svg" alt="Еукаріоти">
+            <h1>Еукаріоти</h1>
+        </div>
+        <div class="card" onclick="window.location='./archey.html'">
+            <img src="img/archey.svg" alt="Археї">
+            <h1>Археї</h1>
+        </div>
     </section>
 
     <script>
         function toggleTheme() {
-            if (document.body.className == 'th1') {
-                document.body.className = 'th2';
-            } else {
-                document.body.className = 'th1';
-            }
+            if (document.body.className == 'th1')
+                document.body.className = 'th2'
+            else
+                document.body.className = 'th1'
         }
 
         document.getElementById('theme').onclick = toggleTheme;
