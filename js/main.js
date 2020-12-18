@@ -6,5 +6,3 @@ function toggleTheme() {
     else
         document.body.className = 'th1'
 }
-
-document.getElementById('theme').onclick = toggleTheme

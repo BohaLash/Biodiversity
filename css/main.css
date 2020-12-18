@@ -14,7 +14,7 @@
     --accent: #e48297;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
     .th1 {
         --bg: #fff;
         --shadow: #333;
@@ -29,7 +29,7 @@
     }
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
     .th1 {
         --bg: #111;
         --shadow: #000;
@@ -123,4 +123,13 @@ a {
 
 a:hover {
     color: var(--accent);
+}
+
+#theme {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    color: var(--el);
+    background-color: var(--blocks)
 }
