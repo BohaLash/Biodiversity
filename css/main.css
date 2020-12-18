@@ -111,7 +111,7 @@ nav {
 
 a {
     display: block;
-    padding: 0 1em;
+    padding: 0.1em 1em;
     color: var(--el);
     text-decoration: none;
     transition-duration: 0.1s;
