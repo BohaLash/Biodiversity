@@ -130,6 +130,7 @@ a:hover {
     bottom: 0;
     right: 0;
     z-index: 100;
+    margin: 0.5em;
     color: var(--el);
     background-color: var(--blocks)
 }
