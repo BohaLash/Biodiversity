@@ -1,5 +1,15 @@
 /* Biodiversity */
 
+@font-face {
+  font-family: PressStart;
+  src: url(../fonts/Press_Start_2P/PressStart2P-Regular.ttf);
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
 :root {
     --accent: #e48297;
 }
@@ -42,9 +52,17 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Montserrat;
     background: var(--bg);
     color: var(--el);
+}
+
+h1, h2, h3 {
+    font-family: PressStart;
+}
+
+h1 {
+    font-size: xx-large;
 }
 
 section {
@@ -71,4 +89,38 @@ img {
 .card:hover > img {
     height: 11em;
     width: 11em;
+}
+
+.info {
+    height: 100%;
+    width: 50%;
+    padding: 3em;
+}
+
+.model {
+    height: 100%;
+    width: 50%;
+    padding: 0 5em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+a {
+    display: block;
+    padding: 0 1em;
+    color: var(--el);
+    text-decoration: none;
+    transition-duration: 0.1s;
+}
+
+#selected {
+    border-bottom: solid;
+}
+
+a:hover {
+    color: var(--accent);
 }

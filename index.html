@@ -6,6 +6,7 @@
     <title>
         Biodiversity
     </title>
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"> -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
@@ -18,27 +19,19 @@
     <section>
         <div class="card" onclick="window.location='./bacteria.html'">
             <img src="img/bacteria.svg" alt="Бактерії">
-            <h1>Бактерії</h1>
+            <h2>Бактерії</h2>
         </div>
         <div class="card" onclick="window.location='./eukaryote.html'">
             <img src="img/eukaryote.svg" alt="Еукаріоти">
-            <h1>Еукаріоти</h1>
+            <h2>Еукаріоти</h2>
         </div>
         <div class="card" onclick="window.location='./archey.html'">
             <img src="img/archey.svg" alt="Археї">
-            <h1>Археї</h1>
+            <h2>Археї</h2>
         </div>
     </section>
 
     <script>
-        function toggleTheme() {
-            if (document.body.className == 'th1')
-                document.body.className = 'th2'
-            else
-                document.body.className = 'th1'
-        }
-
-        document.getElementById('theme').onclick = toggleTheme;
     </script>
     <script src="js/main.js"></script>
 </body>
